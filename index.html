@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <title>Songs App</title>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgba(0, 89, 255,0.5);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgba(117, 204, 255, 0.5);stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <path fill="url(#grad1)" fill-opacity="1"
+            d="M0,224L24,224C48,224,96,224,144,234.7C192,245,240,267,288,282.7C336,299,384,309,432,282.7C480,256,528,192,576,192C624,192,672,256,720,245.3C768,235,816,149,864,133.3C912,117,960,171,1008,197.3C1056,224,1104,224,1152,218.7C1200,213,1248,203,1296,176C1344,149,1392,107,1416,85.3L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z">
+        </path>
+    </svg>
+    <nav>
+        <a>Home</a>
+        <a>Songs</a>
+        <a>Forum</a>
+        <a>Contact Us</a>
+    </nav>
+    <div class="header">
+        <img class="cover-img" src="./img/cover_1.svg"></img>
+        <div class="website-intro">
+            <h1>Dive into the world of <span>music</span></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, impedit aut! Corrupti, ipsam
+                tenetur similique numquam quos,
+                dignissimos earum omnis veritatis facere non soluta mollitia ratione veniam reprehenderit repellat
+                voluptatum.
+            </p>
+            <button>Know us Better</button>
+        </div>
+    </div>
+    <div class="features-container">
+        <div class="feature">
+            <i class="fas fa-fist-raised"></i>
+            <h3>Top Hits</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt quia alias reprehenderit non libero
+                accusamus earum quis praesentium consequuntur, repellat maxim
+            </p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-music"></i>
+            <h3>Live Concerts</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt quia alias reprehenderit non libero
+                accusamus earum quis praesentium consequuntur, repellat maxim
+            </p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-comment-dollar"></i>
+            <h3>Free Tickets</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt quia alias reprehenderit non libero
+                accusamus earum quis praesentium consequuntur, repellat maxim
+            </p>
+        </div>
+    </div>
+    <img id="loader" class="loader show" src="./img/spinner.gif" alt="loader" width="100" height="100">
+    <div id="singers-container" class="singers-container">
+    </div>
+    <header>
+        <h1>Search For a Song</h1>
+        <div class="search-wrapper">
+            <form id="form">
+                <input type="text" id="search" placeholder="Enter artist or song name...">
+                <button class="search-button">Search</button>
+            </form>
+            <button id="voice" class="voice-btn"><i class="fas fa-microphone"></i></button>
+        </div>
+    </header>
+
+    <div id="result" class="container">
+        <p>Results will be displayed here</p>
+    </div>
+
+    <div id="more" class="container centered"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
